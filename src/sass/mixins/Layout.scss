@@ -1,0 +1,5 @@
+// Margins
+@mixin margin($props) {
+    margin: auto;
+    width: $props;
+}

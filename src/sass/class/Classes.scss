@@ -1,0 +1,14 @@
+@import "../Styles/StyleProject.scss";
+@import "../mixins/Layout.scss";
+
+.navlink {
+    font-size: 20px;
+    font-family: $text;
+    font-weight: $regular;
+    color: $white;
+    letter-spacing: 1px;
+}
+
+.margin-header{
+    @include margin(82%);
+}
