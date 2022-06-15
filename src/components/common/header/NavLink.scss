@@ -1,0 +1,9 @@
+@import "../../../sass/Style.scss";
+
+.list-links{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0 47px;
+    width: fit-content;
+}
