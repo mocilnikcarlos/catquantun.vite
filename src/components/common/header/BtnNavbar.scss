@@ -1,0 +1,47 @@
+@import "../../../sass/Style.scss";
+
+.link-navbar {
+    max-width: fit-content;
+    max-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    &:hover .link-navbar-container{
+        transform: translateY(-20px);
+    }
+
+    &:hover .link-scroll-up{
+        transform: rotate(20deg);
+    }
+
+    &:hover .link-scroll-down{
+        transform: rotate(0);
+    }
+}
+
+.mask {
+    position: relative;
+    height: 20px;
+    overflow: hidden;
+}
+
+.link-navbar-container {
+    transition: transform 300ms ease;
+}
+
+.text-link {
+    display: block;
+    line-height: 20px;
+    transition: transform 300ms ease;
+}
+
+.link-scroll-up {
+    transform-origin: right center;
+}
+
+.link-scroll-down {
+    transform-origin: left center;
+    transform: rotate(20deg);
+}
