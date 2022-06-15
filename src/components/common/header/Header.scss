@@ -1,0 +1,60 @@
+@import "../../../sass/Style.scss";
+
+.header{
+    background-color: $background;
+    min-width: 100vw;
+    min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.box-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+// Logo + animation
+
+.logo text{
+    transition: all 300ms ease-in-out;
+
+    &:hover {
+        filter: drop-shadow(0 0 10px $blue);
+        transition: all 300ms ease-in-out;
+    }
+}
+
+.logo:hover g g:nth-child(4){
+    animation: myAnim 1s ease 0s infinite alternate forwards;;
+}
+
+@keyframes myAnim {
+    0% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+
+    10% {
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    17% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+
+    33% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+
+    45% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+}
