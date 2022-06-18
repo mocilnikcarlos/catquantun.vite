@@ -9,6 +9,15 @@
     letter-spacing: 1px;
 }
 
-.margin-header{
+.margin-header {
     @include margin(82%);
+}
+
+.box-section {
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.box-article {
+    @include margin(70%);
 }
