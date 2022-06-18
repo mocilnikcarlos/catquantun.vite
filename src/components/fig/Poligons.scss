@@ -1,0 +1,15 @@
+@import "../../sass/Style.scss";
+
+.row-horizontal{
+    width: 25px;
+    height: 3px;
+    background-color: $grey;
+    opacity: .5;
+}
+
+.column-vertical{
+    width: 3px;
+    height: 50px;
+    background-color: $grey;
+    opacity: .5;
+}

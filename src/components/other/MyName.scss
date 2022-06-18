@@ -1,0 +1,15 @@
+@import "../../sass/Style.scss";
+
+.box-my-name{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.text-my-name{
+    font-family: $text;
+    margin-left: 12px;
+    font-size: 14px;
+    font-weight: $regular;
+    color: $grey;
+}

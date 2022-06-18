@@ -1,0 +1,30 @@
+@import "../../sass/Style.scss";
+
+.box-info-hero{
+    display: flex;
+    gap: 16px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.box-text-info-hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title-info-hero{
+    font-family: $text;
+    font-size: 14px;
+    font-weight: $medium;
+    color: $grey;
+}
+
+.title-up{
+    margin-top: 4px;
+}
+
+.title-down{
+    margin-left: 8px;
+    opacity: .5;
+}
