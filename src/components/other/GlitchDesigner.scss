@@ -6,6 +6,10 @@
     width: fit-content;
     height: fit-content;
     cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 
     &:hover .layers {
         position: relative;

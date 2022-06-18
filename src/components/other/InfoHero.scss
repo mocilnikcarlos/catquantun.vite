@@ -1,7 +1,6 @@
 @import "../../sass/Style.scss";
 
 .box-info-hero{
-    background-color: royalblue;
     display: flex;
     gap: 16px;
     width: fit-content;
@@ -15,6 +14,7 @@
 }
 
 .title-info-hero{
+    font-family: $text;
     font-size: 14px;
     font-weight: $medium;
     color: $grey;
