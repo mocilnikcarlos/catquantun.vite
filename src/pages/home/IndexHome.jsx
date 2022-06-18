@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import Hero from "./Hero";
 
-const IndexHero = () => {
+const IndexHome = () => {
   return (
     <Fragment>
       <Hero />
@@ -9,4 +9,4 @@ const IndexHero = () => {
   );
 };
 
-export default IndexHero;
+export default IndexHome;
