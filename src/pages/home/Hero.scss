@@ -1,0 +1,5 @@
+@import "../../sass/Style.scss";
+
+.background-hero{
+    @include backgroundImg(bghero);
+}

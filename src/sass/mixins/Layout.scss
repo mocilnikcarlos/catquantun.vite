@@ -3,3 +3,13 @@
     margin: auto;
     width: $props;
 }
+
+@mixin backgroundImg($props) {
+    $url: "../../assets/img/#{$props}.png";
+    background-image: url($url);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: inherit;
+    height: inherit;
+}
