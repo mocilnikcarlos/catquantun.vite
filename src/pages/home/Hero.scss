@@ -3,3 +3,15 @@
 .background-hero{
     @include backgroundImg(bghero);
 }
+
+.article-hero {
+    background-color: rebeccapurple;
+    padding-top: 100px;
+    min-height: 100vh;
+}
+
+.boxs-infohero{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px 50px;
+}
