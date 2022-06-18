@@ -1,4 +1,4 @@
-import dataLinks from "../../helpers/dataNavLinks.json";
+import dataLinks from "../../../helpers/dataNavLinks.json";
 import BtnNavbar from "./BtnNavbar";
 import "./NavLink.scss";
 

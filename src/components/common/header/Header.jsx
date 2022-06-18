@@ -1,4 +1,4 @@
-import Logo from "../../assets/svg/Logo";
+import Logo from "../../../assets/svg/Logo";
 import NavLink from "./NavLink";
 
 import "./Header.scss";
