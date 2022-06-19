@@ -1,0 +1,22 @@
+@import "../../sass/Style.scss";
+
+.section-work-designer {
+    background-color: $background;
+}
+
+.article-work-designer {
+    padding-top: 177px;
+    padding-bottom: 50px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cards-work-designer {
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

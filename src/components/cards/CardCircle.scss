@@ -1,0 +1,128 @@
+@import "../../sass/Style.scss";
+
+.box-circle-design {
+    width: 300px;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.content-circle-design {
+    position: relative;
+
+    &:hover .icon-circle {
+        width: 300px;
+        height: 220px;
+        border-radius: 12px;
+
+        &::after,
+        &::before {
+            border-radius: 12px;
+            transition: all 500ms ease;
+            transition-delay: 200ms;
+        }
+    }
+
+    &:hover .icon {
+        transform: translateY(-48px);
+        transition: all 500ms ease;
+        transition-delay: 200ms;
+    }
+
+    &:hover .title-circle-up {
+        z-index: 1;
+        transition: all 500ms ease;
+        transition-delay: 300ms;
+        opacity: 1;
+    }
+
+    &:hover .title-circle-down {
+        z-index: 1;
+        transition: all 500ms ease;
+        transition-delay: 200ms;
+        opacity: 0;
+        bottom: 64px;
+    }
+}
+
+.icon-circle {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    z-index: 0;
+    transition: all 500ms ease;
+    transition-delay: 200ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::after,
+    &::before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        transition: all 500ms ease;
+        transition-delay: 200ms;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        background: linear-gradient(to top, $red, $blue);
+        background-size: 400%;
+        filter: blur(2px);
+    }
+
+    &::after {
+        background: $background;
+        border: 1px solid transparent;
+        background-clip: padding-box;
+        box-shadow: $shadowBlack;
+    }
+}
+
+.icon {
+    position: absolute;
+    z-index: 1;
+    transition: all 500ms ease;
+    transition-delay: 200ms;
+}
+
+.title-circle {
+    width: 257px;
+    height: fit-content;
+    left: calc(50% - 128.5px);
+    transition: all 500ms ease;
+    text-align: center;
+    pointer-events: none;
+}
+
+.title-circle-up {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    transition-delay: 100ms;
+    bottom: 40px;
+    font-size: 16px;
+    font-family: $text;
+    font-weight: $light;
+    color: $white;
+}
+
+.title-circle-down {
+    position: absolute;
+    z-index: 1;
+    opacity: 1;
+    bottom: -64px;
+    transition-delay: 200ms;
+    font-size: 24px;
+    font-family: $text;
+    font-weight: $light;
+    color: $white;
+}
