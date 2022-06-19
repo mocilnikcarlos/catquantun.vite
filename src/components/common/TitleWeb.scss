@@ -1,0 +1,42 @@
+@import "../../sass/Style.scss";
+
+.box-title-web {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-web {
+    font-size: 46px;
+    font-family: $title;
+    font-weight: $bold;
+    color: $white;
+}
+
+.line-row {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    gap: 10.5px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.line-row-left {
+    width: 50px;
+    height: 5px;
+    border-radius: 20px;
+    background-color: $red;
+}
+
+.line-row-right {
+    width: 20px;
+    height: 5px;
+    border-radius: 20px;
+    background-color: $red;
+}
