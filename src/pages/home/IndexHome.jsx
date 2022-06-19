@@ -11,4 +11,4 @@ const IndexHome = () => {
   );
 };
 
-export default IndexHero;
+export default IndexHome;
