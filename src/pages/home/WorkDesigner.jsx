@@ -3,12 +3,14 @@ import DataProt from "../../assets/svg/DataProt";
 import Idea from "../../assets/svg/Idea";
 import UserSpeak from "../../assets/svg/UserSpeak";
 import CardCircle from "../../components/cards/CardCircle";
+import { TitleWeb2 } from "../../components/common/TitleWeb";
 import "./WorkDesigner.scss";
 
 const WorkDesigner = () => {
   return (
     <section className="box-section section-work-designer">
       <article className="box-article article-work-designer">
+        <TitleWeb2 placeholder="El trabajo de un Designer UX" />
         <div className="cards-work-designer">
           <CardCircle
             element={<UserSpeak />}
