@@ -21,3 +21,11 @@
 .box-article {
     @include margin(70%);
 }
+
+.textweb {
+    font-size: 18px;
+    font-family: $text;
+    font-weight: $light;
+    color: $grey;
+    line-height: 35px;
+}
