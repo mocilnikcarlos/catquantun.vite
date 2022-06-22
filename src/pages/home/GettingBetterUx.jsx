@@ -3,6 +3,7 @@ import Pen from "../../assets/svg/Pen";
 import Search from "../../assets/svg/Search";
 import CardLines from "../../components/cards/CardLines";
 import { TitleWeb2 } from "../../components/common/TitleWeb";
+import { Ark } from "../../components/fig/Poligons";
 import "./GettingBetterUx.scss";
 
 const GettingBetterUx = () => {
@@ -28,6 +29,7 @@ const GettingBetterUx = () => {
           />
         </div>
       </article>
+      <Ark />
     </section>
   );
 };
