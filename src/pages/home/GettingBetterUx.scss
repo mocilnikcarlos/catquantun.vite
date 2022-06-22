@@ -1,0 +1,28 @@
+@import "../../sass/Style.scss";
+
+.section-better-ux {
+    background-color: $background;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.article-better-ux {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content-cards-better-ux {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 274px;
+    margin-top: 60px;
+
+    & :nth-child(2){
+        align-self: flex-end;
+    }
+}

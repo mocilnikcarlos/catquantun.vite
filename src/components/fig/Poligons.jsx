@@ -8,4 +8,8 @@ const ColumnVertical = () => {
   return <div className="column-vertical"></div>;
 };
 
-export { RowHorizontal, ColumnVertical };
+const Ark = () => {
+  return <div className="box-ark"></div>;
+};
+
+export { RowHorizontal, ColumnVertical, Ark };
