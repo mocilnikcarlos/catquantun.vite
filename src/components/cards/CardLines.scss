@@ -14,29 +14,29 @@
     &:hover{
         border: 2px solid $red;
         transition-delay: 1s;
-        box-shadow: $shadowRed;
+        box-shadow: 0 0 6px $shadowRed;
     }
 
     &:hover .linehover:nth-child(1) {
         left: 100%;
-        transition: 1s;
+        transition: all 700ms ease;
     }
 
     &:hover .linehover:nth-child(3) {
         right: 100%;
-        transition: 1s;
+        transition: all 700ms ease;
         transition-delay: 500ms;
     }
 
     &:hover .linehover:nth-child(2) {
         top: 100%;
-        transition: 1s;
+        transition: all 700ms ease;
         transition-delay: 250ms;
     }
 
     &:hover .linehover:nth-child(4) {
         bottom: 100%;
-        transition: 1s;
+        transition: all 700ms ease;
         transition-delay: 750ms;
     }
 }
