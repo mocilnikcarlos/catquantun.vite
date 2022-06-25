@@ -73,6 +73,7 @@
     }
 }
 
+// Icon eye
 .icon-eye {
     background-color: $black;
     position: absolute;
@@ -88,6 +89,7 @@
     z-index: 2;
 }
 
+// Background Img Card
 @each $name, $key in $imgCard {
     .img-design-#{$name} {
         @include classImg($key);

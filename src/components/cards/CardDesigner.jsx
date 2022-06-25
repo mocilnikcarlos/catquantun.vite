@@ -1,16 +1,13 @@
-import EyeCard from "../../assets/svg/EyeCard";
 import "./CardDesigner.scss";
 
-const CardDesigner = () => {
+const CardDesigner = (props) => {
   return (
     <div className="img-card">
-      <span className="icon-eye">
-        <EyeCard />
-      </span>
-      <div className="img-design-wallpaper"></div>
+      <span className="icon-eye">{props.element}</span>
+      <div className={`img-design-${props.img}`}></div>
       <div className="text-card">
-        <span className="titleup-card">Titulo del Diseño</span>
-        <span className="titledown-card">Explicación del diseño</span>
+        <span className="titleup-card">{props.title}</span>
+        <span className="titledown-card">{props.text}</span>
       </div>
     </div>
   );
