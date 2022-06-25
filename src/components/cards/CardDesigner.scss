@@ -1,5 +1,6 @@
 @import "../../sass/Style.scss";
 
+
 .img-card {
     width: 630px;
     height: 464px;
@@ -50,9 +51,13 @@
         transform: scale(1);
     }
 
-    &:hover .img-design {
-        filter: blur(10px);
-        transition: all 300ms ease;
+    &:hover {
+        @each $name, $key in $imgCard {
+            .img-design-#{$name} {
+                filter: blur(10px);
+                transition: all 300ms ease;
+            }
+        }
     }
 
     &:hover .icon-eye {
@@ -83,12 +88,14 @@
     z-index: 2;
 }
 
-.img-design {
-    @include classImg(Wallpaper);
-    width: 100%;
-    height: 100%;
-    border-radius: inherit;
-    transition: all .300ms ease;
+@each $name, $key in $imgCard {
+    .img-design-#{$name} {
+        @include classImg($key);
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+        transition: all .300ms ease;
+    }
 }
 
 .text-card {

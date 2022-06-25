@@ -7,7 +7,7 @@ const CardDesigner = () => {
       <span className="icon-eye">
         <EyeCard />
       </span>
-      <div className="img-design"></div>
+      <div className="img-design-wallpaper"></div>
       <div className="text-card">
         <span className="titleup-card">Titulo del Diseño</span>
         <span className="titledown-card">Explicación del diseño</span>
