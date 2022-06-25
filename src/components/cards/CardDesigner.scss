@@ -1,0 +1,118 @@
+@import "../../sass/Style.scss";
+
+.img-card {
+    width: 630px;
+    height: 464px;
+    border-radius: 12px;
+    border: 2px solid $transparentWhite;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    &:before {
+        transition: all 300ms ease;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: inherit;
+        background-color: $transparentBlack;
+        transform: scale(0);
+        z-index: 1;
+    }
+
+    &:after {
+        transition: all 400ms ease 200ms;
+        content: "";
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        right: 8px;
+        bottom: 8px;
+        border-radius: inherit;
+        background: $black;
+        opacity: 0;
+        transform: scale(0);
+        z-index: 1;
+    }
+
+    &:hover::before {
+        opacity: .5;
+        transform: scale(1);
+    }
+
+    &:hover::after {
+        opacity: .35;
+        transform: scale(1);
+    }
+
+    &:hover .img-design {
+        filter: blur(10px);
+        transition: all 300ms ease;
+    }
+
+    &:hover .icon-eye {
+        transform: scale(0);
+        opacity: .5;
+        transition: all 300ms ease 200ms;
+    }
+
+    &:hover .text-card {
+        bottom: 34.6px;
+        transition: all 300ms ease 200ms;
+        opacity: 1;
+    }
+}
+
+.icon-eye {
+    background-color: $black;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    width: 90px;
+    height: 90px;
+    opacity: .72;
+    transform: scale(1);
+    transition: all 300ms ease 200ms;
+    z-index: 2;
+}
+
+.img-design {
+    @include classImg(Wallpaper);
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    transition: all .300ms ease;
+}
+
+.text-card {
+    position: absolute;
+    bottom: -60px;
+    left: 47px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    transition: all 300ms ease;
+    opacity: 0;
+    z-index: 2;
+}
+
+.titleup-card {
+    font-size: 20px;
+    font-family: $title;
+    font-weight: $medium;
+    color: $white;
+}
+
+.titledown-card {
+    font-size: 20px;
+    font-family: $text;
+    font-weight: $light;
+    color: $grey;
+}
