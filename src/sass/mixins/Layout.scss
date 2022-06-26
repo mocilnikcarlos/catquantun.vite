@@ -13,3 +13,11 @@
     width: inherit;
     height: inherit;
 }
+
+@mixin classImg($props) {
+    $url: "../../assets/img/#{$props}.png";
+    background-image: url($url);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

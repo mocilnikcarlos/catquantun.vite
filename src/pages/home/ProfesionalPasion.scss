@@ -1,0 +1,30 @@
+@import "../../sass/Style.scss";
+
+.profesional-pasion-section {
+    background-color: $background;
+}
+
+.profesional-pasion-article {
+    min-height: 100vh;
+    padding-top: 77px;
+    padding-bottom: 50px;
+}
+
+.box-cards-design {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px 0;
+}
+
+.first-cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.second-cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
