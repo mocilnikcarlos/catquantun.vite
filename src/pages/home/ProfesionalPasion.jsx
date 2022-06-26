@@ -3,12 +3,14 @@ import {
   FirstCardDesigner,
   SecondCardDesigner,
 } from "../../components/cards/CardDesigner";
+import { TitleWeb1 } from "../../components/common/TitleWeb";
 import "./ProfesionalPasion.scss";
 
 const ProfesionalPasion = () => {
   return (
     <section className="box-section profesional-pasion-section">
       <article className="box-article profesional-pasion-article">
+        <TitleWeb1 placeholder="Pasión profesional" />
         <div className="box-cards-design">
           <div className="first-cards">
             <FirstCardDesigner
