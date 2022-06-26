@@ -31,19 +31,19 @@ const ProfesionalPasion = () => {
               title="Este titulo nuevo"
               text="Es de una card mas pequeña"
               element={<EyeCard />}
-              img="prev01"
+              src="prev01"
             />
             <SecondCardDesigner
               title="Otro titulo nuevo"
               text="Texto de la segunda mas pequeña"
               element={<EyeCard />}
-              img="bghero"
+              src="bghero"
             />
             <SecondCardDesigner
               title="Ultimo titulo"
               text="Ultima texto de la card"
               element={<EyeCard />}
-              img="prev01"
+              src="prev01"
             />
           </div>
         </div>
