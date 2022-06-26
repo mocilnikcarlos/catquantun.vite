@@ -8,3 +8,22 @@
     background-color: rebeccapurple;
     min-height: 100vh;
 }
+
+.box-cards-design {
+    background-color: sandybrown;
+    display: flex;
+    flex-direction: column;
+    gap: 60px 0;
+}
+
+.first-cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.second-cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}

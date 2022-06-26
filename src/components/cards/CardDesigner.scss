@@ -1,7 +1,7 @@
 @import "../../sass/Style.scss";
 
-
-.img-card {
+// First cards
+.img-card-first {
     width: 630px;
     height: 464px;
     border-radius: 12px;
@@ -53,6 +53,81 @@
 
     &:hover {
         @each $name, $key in $imgCard {
+            .img-design-#{$name} {
+                filter: blur(10px);
+                transition: all 300ms ease;
+            }
+        }
+    }
+
+    &:hover .icon-eye {
+        transform: scale(0);
+        opacity: .5;
+        transition: all 300ms ease 200ms;
+    }
+
+    &:hover .text-card {
+        bottom: 34.6px;
+        transition: all 300ms ease 200ms;
+        opacity: 1;
+    }
+}
+
+// Second cards
+.img-card-second {
+    width: 400px;
+    height: 488px;
+    border-radius: 12px;
+    border: 2px solid $transparentWhite;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    &:before {
+        transition: all 300ms ease;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: inherit;
+        background-color: $transparentBlack;
+        transform: scale(0);
+        z-index: 1;
+    }
+
+    &:after {
+        transition: all 400ms ease 200ms;
+        content: "";
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        right: 8px;
+        bottom: 8px;
+        border-radius: inherit;
+        background: $black;
+        opacity: 0;
+        transform: scale(0);
+        z-index: 1;
+    }
+
+    &:hover::before {
+        opacity: .5;
+        transform: scale(1);
+    }
+
+    &:hover::after {
+        opacity: .35;
+        transform: scale(1);
+    }
+
+    &:hover {
+
+        @each $name,
+        $key in $imgCard {
             .img-design-#{$name} {
                 filter: blur(10px);
                 transition: all 300ms ease;
