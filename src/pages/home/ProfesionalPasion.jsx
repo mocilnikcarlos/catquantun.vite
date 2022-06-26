@@ -17,13 +17,13 @@ const ProfesionalPasion = () => {
               title="hola, este es un titulo"
               text="Y este es el texto"
               element={<EyeCard />}
-              img="wallpaper"
+              src="prev01"
             />
             <FirstCardDesigner
               title="Este es otro titulo"
               text="Y este es otro texto"
               element={<EyeCard />}
-              img="bghero"
+              src="bghero"
             />
           </div>
           <div className="second-cards">
@@ -31,7 +31,7 @@ const ProfesionalPasion = () => {
               title="Este titulo nuevo"
               text="Es de una card mas pequeña"
               element={<EyeCard />}
-              img="wallpaper"
+              img="prev01"
             />
             <SecondCardDesigner
               title="Otro titulo nuevo"
@@ -43,7 +43,7 @@ const ProfesionalPasion = () => {
               title="Ultimo titulo"
               text="Ultima texto de la card"
               element={<EyeCard />}
-              img="wallpaper"
+              img="prev01"
             />
           </div>
         </div>

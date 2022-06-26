@@ -6,7 +6,7 @@ const FirstCardDesigner = (props) => {
       <div className="box-eye">
         <span className="icon-eye">{props.element}</span>
       </div>
-      <div className={`img-design-${props.img}`}></div>
+      <div className={`img-design-${props.src}`}></div>
       <div className="text-card">
         <span className="titleup-card">{props.title}</span>
         <span className="titledown-card">{props.text}</span>
@@ -21,7 +21,7 @@ const SecondCardDesigner = (props) => {
       <div className="box-eye">
         <span className="icon-eye">{props.element}</span>
       </div>
-      <div className={`img-design-${props.img}`}></div>
+      <div className={`img-design-${props.src}`}></div>
       <div className="text-card">
         <span className="titleup-card">{props.title}</span>
         <span className="titledown-card">{props.text}</span>
